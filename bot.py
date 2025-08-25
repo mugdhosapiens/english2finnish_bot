@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from deep_translator import GoogleTranslator
 import os
 
-BOT_TOKEN = os.getenv("8302049150:AAEyTunuiIC3hqWQVFyYrxuuL_2vpo8um7Q")  # get token from environment
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # get token from environment
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hei! Send me English text and I’ll translate it into Finnish 🇫🇮")
